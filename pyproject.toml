@@ -17,6 +17,7 @@ pydantic-settings = "^2.0.2"
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
 httpx = "^0.24.1"
+mypy = "^1.4.1"
 
 [build-system]
 requires = ["poetry-core"]

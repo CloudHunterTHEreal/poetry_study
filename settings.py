@@ -4,9 +4,6 @@ from loguru import logger
 
 
 class Settings(BaseSettings):
-    # api_version: str = "/api/v1"
-    # server_host: str = "0.0.0.0"
-    # server_port: int = 5000
     status_url: str
 
 
