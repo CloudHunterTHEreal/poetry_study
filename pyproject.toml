@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Андрей Мартынов <real.cloudhunter@gmail.com>"]
 readme = "README.md"
-packages = [{include = "pydantic_tests"}]
+packages = [{include = "poetry_study_app"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
