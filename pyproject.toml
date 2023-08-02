@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pydantic-tests"
+version = "0.1.0"
+description = ""
+authors = ["Андрей Мартынов <real.cloudhunter@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pydantic_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
