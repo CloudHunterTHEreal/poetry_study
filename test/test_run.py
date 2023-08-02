@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
-from main import app
-from settings import app_settings
+from poetry_study_app.main import app
+from poetry_study_app.settings import app_settings
 
 
 def test_inside_run():
