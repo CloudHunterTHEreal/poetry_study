@@ -3,9 +3,10 @@ from poetry_study_app.main import app
 from poetry_study_app.settings import app_settings
 
 
-def test_inside_run():
+def test_inside_run() -> None:
     client = TestClient(app)
-    result = client.get(app_settings.status_url)
+    request_path = app_settings.status_url
+    result = client.get(request_path)
 
     assert result.status_code == 200
     assert result.json() == {'status': 'ok'}

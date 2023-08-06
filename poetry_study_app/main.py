@@ -1,7 +1,8 @@
 """ Main module """
 from fastapi import FastAPI
 from pydantic import BaseModel
-from .settings import app_settings
+from loguru import logger
+from poetry_study_app.settings import app_settings
 
 
 app = FastAPI()
@@ -13,6 +14,7 @@ class Status(BaseModel):
 
 
 @app.get(app_settings.status_url)
-def status() -> Status:
+async def status() -> Status:
     """ Status request func """
+    logger.debug(f"{app_settings.status_url = }")
     return Status()
