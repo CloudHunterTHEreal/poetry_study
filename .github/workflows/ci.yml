@@ -38,6 +38,8 @@ jobs:
       - name: Run MyPy
         run: |
           poetry run mypy ./
+        env:
+          STATUS_URL: ${{ vars.STATUS_URL }}
 
       - name: Run PyLint
         run: |
