@@ -13,7 +13,7 @@ class Status(BaseModel):
     status: str = 'ok'
 
 
-@app.get(app_settings.status_url)
+@app.get(app_settings.status_url, tags=['Example routers'])
 async def status() -> Status:
     """ Status request func """
     logger.debug(f"{app_settings.status_url = }")
