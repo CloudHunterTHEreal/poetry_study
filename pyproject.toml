@@ -8,7 +8,7 @@ packages = [{include = "poetry_study_app"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.100.1"
+fastapi = "^0.101.0"
 uvicorn = "^0.23.2"
 loguru = "^0.7.0"
 pydantic-settings = "^2.0.2"

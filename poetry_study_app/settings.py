@@ -14,6 +14,6 @@ logger.info("Example container run command: docker run --name Poetry_Study "
 try:
     app_settings = Settings()
 except ValidationError as v_ex:
-    logger.error("[!] Project environment variable for '/status' endpoint not found\n"
-                 "add -e status_url='/status' into docker run command.")
-    raise v_ex
+    logger.error("[!] Project environment variable for '/status' endpoint not found. Add <-e status_url='/status'>")
+    logger.error(f"{str(v_ex)}")
+    # raise v_ex
